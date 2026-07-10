@@ -1,0 +1,17 @@
+{
+  "name": "mf-repro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/host",
+    "packages/remote"
+  ],
+  "scripts": {
+    "dev:host": "npm run dev -w packages/host",
+    "dev:remote": "npm run dev -w packages/remote",
+    "build": "npm run build --workspaces",
+    "preview:host": "npm run preview -w packages/host",
+    "preview:remote": "npm run preview -w packages/remote"
+  }
+}
